@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Swipe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="preconnect"
@@ -14,34 +14,38 @@
       crossorigin
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <title>Swipe</title>
   </head>
+
   <body>
-    <!-- NAVBAR -->
+    <!-- Navbar -->
     <nav class="navbar">
-      <img src="assets/logo-white.svg" alt="Swipe, Inc." />
+      <img src="assets/logo-white.svg" alt="Swipe, inc." />
       <ul class="menu">
-        <li><a href="">Products</a></li>
-        <li><a href="">Solutions</a></li>
-        <li><a href="">Developers</a></li>
-        <li><a href="">Resources</a></li>
-        <li><a href="">Pricing</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Solutions</a></li>
+        <li><a href="#">Developers</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Pricing</a></li>
       </ul>
+
       <button class="primary-button navbar-button">Sign In</button>
     </nav>
-
     <main>
-      <!-- HERO -->
+      <!-- GRADIENT BG -->
+      <canvas id="gradient-canvas"></canvas>
+      <!-- Hero Section -->
       <div class="hero">
         <div class="section-container two-column">
           <div class="col-left">
             <h1>Payments infrastructure for the world</h1>
             <p>
-              Tons of companies all over the world use Swipe's
-              seamless platform to manage their business's entire
+              Tons of companies all over the world use Swipe’s
+              seamless platform to manage their businesses's entire
               financial transaction infrastructure online.
             </p>
             <div class="button-container">
@@ -64,28 +68,27 @@
           </div>
         </div>
       </div>
-
-      <!-- PARTNERS -->
+      <!-- Partners Section -->
       <div class="partners-section">
         <div class="section-container">
           <div class="partners-grid">
-            <img src="assets/instacart.png" alt="" />
-            <img src="assets/salesforce.png" alt="" />
-            <img src="assets/amazon.png" alt="" />
-            <img src="assets/slack.png" alt="" />
-            <img src="assets/shopify.png" alt="" />
-            <img src="assets/google.png" alt="" />
-            <img src="assets/lyft.png" alt="" />
-            <img src="assets/zoom.png" alt="" />
+            <img src="assets/instacart.png" alt="Instacart" />
+            <img src="assets/salesforce.png" alt="Salesforce" />
+            <img src="assets/amazon.png" alt="Amazon" />
+            <img src="assets/slack.png" alt="Slack" />
+            <img src="assets/shopify.png" alt="Shopify" />
+            <img src="assets/google.png" alt="Google" />
+            <img src="assets/lyft.png" alt="Lyft" />
+            <img src="assets/zoom.png" alt="Zoom" />
           </div>
         </div>
       </div>
-
       <!-- UNIFIED PLATFORM -->
-      <div class="unified-platform">
+      <div class="unified-platform-section">
         <div class="section-container">
           <p class="subtitle">Unified platform</p>
-          <h2>All the payments products you'll ever need</h2>
+          <h2>All the payment products you'll ever need</h2>
+
           <div class="two-column">
             <div class="col-left">
               <p>
@@ -111,36 +114,31 @@
           </div>
           <button class="primary-button with-icon">
             Start now
-            <img
-              src="assets/arrow-right-light.svg3"
-              alt=""
-              srcset=""
-            />
+            <img src="assets/arrow-right-light.svg" alt="" />
           </button>
         </div>
       </div>
-
-      <!-- GRAPHICS SECTION -->
+      <!-- GRAPHIC GRID SECTION -->
       <div class="graphic-section">
         <div class="section-container">
-          <div class="graphics-grid">
+          <div class="graphic-grid">
             <img
-              id="credit-card"
               src="assets/credit-card.png"
               alt=""
+              id="credit-card"
             />
             <img
-              id="slack-invoice"
               src="assets/slack-invoice.png"
               alt=""
+              id="slack-invoice"
             />
-            <img id="phone" src="assets/phone.png" alt="" />
-            <img id="dash" src="assets/dash.png" alt="" />
+            <img src="assets/phone.png" alt="" id="phone" />
+            <img src="assets/dash.png" alt="" id="dash" />
           </div>
         </div>
       </div>
 
-      <!-- INTEGRATIONS -->
+      <!-- INTEGRATIONS SECTION -->
       <div class="integrations-section">
         <div class="section-container two-column">
           <div class="col-left">
@@ -199,7 +197,6 @@
         </div>
       </div>
 
-      <!-- SWIPE -->
       <!-- WHY SWIPE SECTION -->
       <div class="why-swipe-section">
         <div class="section-container">
@@ -246,7 +243,6 @@
         </div>
       </div>
 
-      <!-- GLOBAL -->
       <div class="global-section">
         <div class="section-container">
           <div class="two-column">
@@ -304,7 +300,7 @@
         </div>
       </div>
 
-      <!-- VIRTUAL EVENTS SECTION -->
+      <!-- Virtual Events Section -->
       <div class="virtual-events-section">
         <div class="section-container two-column">
           <div class="col-left">
@@ -443,5 +439,6 @@
         </div>
       </footer>
     </main>
+    <script src="gradient.js"></script>
   </body>
 </html>
