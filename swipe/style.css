@@ -810,6 +810,19 @@ p {
     width: 50%;
     margin: var(--spacing-md) 0;
   }
+
+  /* GETTING STARTED */
+  .getting-started-section .col-right {
+    flex-wrap: wrap;
+  }
+  .getting-started-section .col-right .card {
+    width: 100%;
+    margin: var(--spacing-md) 0;
+  }
+
+  .getting-started-section .two-column {
+    align-items: center;
+  }
 }
 
 /* MOBILE SIZE */
@@ -872,6 +885,8 @@ p {
   #sessions-logo {
     width: 300px;
   }
+
+  /* GETTING STARTED */
 }
 
 html,
