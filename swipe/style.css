@@ -790,6 +790,15 @@ p {
   .integrations-section .card-container .card {
     width: 100%;
   }
+  /* WHY SWIPE */
+  .why-swipe-section .card-container {
+    flex-wrap: wrap;
+  }
+
+  .why-swipe-section .card-container .card {
+    width: 50%;
+    margin: var(--spacing-md) 0;
+  }
 }
 
 /* MOBILE SIZE */
@@ -814,6 +823,15 @@ p {
   /* INTEGRATIONS */
   .integrations-section .col-right {
     display: none;
+  }
+
+  /* WHY SWIPE */
+  .why-swipe-section .card-container .card {
+    width: 100%;
+  }
+
+  .why-swipe-section .card-container .card .icon {
+    height: 35px;
   }
 }
 
